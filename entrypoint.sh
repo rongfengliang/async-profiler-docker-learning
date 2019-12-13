@@ -2,5 +2,5 @@
 
 while true 
 do
-    sleep 10
+    sleep 0.1
 done
