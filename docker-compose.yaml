@@ -12,6 +12,8 @@ services:
       image: tomcat
       ports:
       - "8080:8080"
+      cap_add: 
+      - ALL
       volumes: 
       - "/tmp:/tmp"
       - "./build:/opt/java-perf-tools/build"
