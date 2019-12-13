@@ -3,9 +3,14 @@ services:
     perf:
       build: ./
       privileged: true
+      pid: host
       cap_add: 
-      - ALL
+      - SYS_ADMIN
+      volumes: 
+      - "/tmp:/tmp"
     tomcat:
       image: tomcat
       ports:
       - "8080:8080"
+      volumes: 
+      - "/tmp:/tmp"
