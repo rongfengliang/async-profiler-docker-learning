@@ -8,6 +8,7 @@ services:
       - SYS_ADMIN
       volumes: 
       - "/tmp:/tmp"
+      - "./build:/usr/share/async-profiler/build"
     tomcat:
       image: tomcat
       ports:
@@ -16,4 +17,4 @@ services:
       - ALL
       volumes: 
       - "/tmp:/tmp"
-      - "./build:/opt/java-perf-tools/build"
+      - "./build:/usr/share/async-profiler/build"
