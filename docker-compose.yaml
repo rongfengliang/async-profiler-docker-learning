@@ -1,0 +1,12 @@
+version: "3"
+services: 
+    perf:
+      build: ./
+      pid: host
+      privileged: true
+      cap_add: 
+      - ALL
+    tomcat:
+      image: tomcat
+      ports:
+      - "8080:8080"
