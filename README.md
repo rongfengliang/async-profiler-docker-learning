@@ -16,4 +16,4 @@ docker-compose up -d
 
 ## some notes
 
-be sure contain && host haas some path  `/opt/java-perf-tools/build`
+be sure contain && host haas some path  `/usr/share/async-profiler/build`
