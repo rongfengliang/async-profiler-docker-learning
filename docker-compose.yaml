@@ -14,3 +14,4 @@ services:
       - "8080:8080"
       volumes: 
       - "/tmp:/tmp"
+      - "./build:/opt/java-perf-tools/build"
