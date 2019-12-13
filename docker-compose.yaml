@@ -4,7 +4,6 @@ services:
       build: ./
       pid: host
       privileged: true
-      command: 
       cap_add: 
       - ALL
     tomcat:
